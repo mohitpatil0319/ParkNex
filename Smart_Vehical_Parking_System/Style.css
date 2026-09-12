@@ -1,0 +1,41 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Arial;background:#050b12;color:white}
+header{height:72px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;background:#07111c;position:sticky;top:0;z-index:10;border-bottom:1px solid #20374b}
+.logo{font-size:22px;font-weight:bold;color:#45c7ff}
+nav{display:flex;gap:28px}
+nav a{color:#9ba9b7;text-decoration:none}
+nav a:hover{color:#45c7ff}
+.hero{min-height:430px;padding:80px 7%;display:flex;align-items:center;justify-content:space-between;background:radial-gradient(circle at 80% 40%,#123752,#050b12 50%)}
+.hero h1{font-size:65px;max-width:700px}
+.hero h1 span{display:block;color:#45c7ff}
+.hero p{max-width:600px;color:#94a2b0;line-height:1.8}
+.tag{color:#45c7ff;font-size:12px;letter-spacing:3px;margin-bottom:15px}
+.hero-car{font-size:150px;animation:float 3s infinite}
+@keyframes float{50%{transform:translateY(-15px)}}
+.stats{width:86%;margin:50px auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.stat,.card,.dsa-card{background:#0d1b29;border:1px solid #20374b;border-radius:10px;padding:25px}
+.stat{display:flex;gap:15px;align-items:center}
+.stat span{font-size:30px}
+.stat p{color:#8492a0}
+.stat h2{font-size:30px;color:#45c7ff}
+.section{width:86%;margin:90px auto}
+.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}
+button{background:#45c7ff;border:none;padding:13px 20px;border-radius:6px;font-weight:bold;cursor:pointer}
+.parking-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.slot{height:160px;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px}
+.free{background:#0d2a21;border:1px solid #287b59;color:#45df91;cursor:pointer}
+.busy{background:#2b1519;border:1px solid #823944;color:#ff6374}
+.manage{width:86%;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card h2{margin-bottom:20px}
+input,select{width:100%;padding:13px;margin:10px 0;background:#07111c;color:white;border:1px solid #294052;border-radius:6px}
+.card p{margin:12px 0;color:#45c7ff}
+.list-box{background:#0d1b29;border:1px solid #20374b;padding:20px;border-radius:10px;min-height:60px}
+.dsa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.dsa-card h3{color:#45c7ff;margin-bottom:12px}
+.dsa-card p{color:#9ba9b7;line-height:1.6}
+.visual{margin-top:15px;background:#07111c;padding:15px;border-radius:6px;color:#45df91;font-family:monospace}
+footer{text-align:center;background:#02060b;padding:40px;margin-top:80px;color:#7f8d9a}
+footer h3{color:#45c7ff;margin-bottom:10px}
+@media(max-width:900px){.stats,.manage,.dsa-grid{grid-template-columns:repeat(2,1fr)}.hero-car{display:none}}
+@media(max-width:600px){header{height:auto;padding:20px;flex-direction:column;gap:15px}.stats,.manage,.parking-grid,.dsa-grid{grid-template-columns:1fr}.hero h1{font-size:45px}}
